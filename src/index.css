@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: url(./assets/background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  height: 7rem;
+}
+
+.hero {
+  background-color: #010101;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5rem;
+  gap: 8rem;
+  justify-content: space-around;
+}
+
+#conversation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Default alignment is to the left */
+  justify-content: flex-start;
+  margin: 0 auto;
+  background-image: url(./assets/background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.bubble {
+  display: flex;
+  margin-bottom: 10px; /* Spacing between bubbles */
+  justify-content: flex-start; /* Default alignment */
+}
+
+.bubble img {
+  transform: scale(0.7); /* Scale the SVG to 70% of its original size */
+  transform-origin: top left; /* Keep the scaling anchored to the top-left corner */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.bubble.left {
+  justify-content: flex-start;
+}
+
+.bubble.right {
+  justify-content: flex-end;
+  align-self: flex-end; /* Align the right bubbles to the right edge */
+}
+
+.bubble.right img {
+  transform-origin: top right; /* Adjust scaling origin to top-right for right-aligned bubbles */
+}
+
+.header {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #e9e9eb;
+  max-width: 600px;
+}
